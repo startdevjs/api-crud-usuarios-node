@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon ./src/index.js"
+    "start": "nodemon ./src/index.js",
+    "build": "sucrase ./src -d ./build --transforms imports"
   },
   "dependencies": {
     "@prisma/client": "^4.5.0",
